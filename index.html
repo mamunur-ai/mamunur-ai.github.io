@@ -1,178 +1,408 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr Md Mamunur Rahaman – Academic Portfolio</title>
-  <!-- Link to the site stylesheet -->
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts for elegant typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md Mamunur Rahaman - PhD Candidate in Computer Science & Engineering at UNSW. Researcher in Multimodal Medical AI, Histopathology, and Computational Pathology.">
+    <meta name="keywords" content="Mamunur Rahaman, Medical AI, Deep Learning, Histopathology, UNSW, Computer Vision, PhD, NeurIPS, MICCAI">
+    <meta name="author" content="Md Mamunur Rahaman">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mamunur-ai.github.io/">
+    <meta property="og:title" content="Md Mamunur Rahaman | AI for Healthcare">
+    <meta property="og:description" content="Researcher at the intersection of biomedical science and AI. PhD Candidate at UNSW, Visiting Fellow at Georgia Tech & TUM.">
+    <meta property="og:image" content="assets/images/profile-preview.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Md Mamunur Rahaman | AI for Healthcare">
+    <meta name="twitter:description" content="Researcher at the intersection of biomedical science and AI. PhD Candidate at UNSW.">
+    <meta name="twitter:image" content="assets/images/profile-preview.jpg">
+
+    <title>Md Mamunur Rahaman | PhD Candidate, UNSW</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
-  <!-- Hero header with name and tagline -->
-  <header class="hero" id="home">
-    <div class="container">
-      <h1>Dr Md Mamunur Rahaman</h1>
-      <p class="subtitle">Researcher in Biomedical AI and Multimodal Learning</p>
-      <!-- Navigation menu (fixed header with smooth scroll) -->
-      <nav class="nav">
-        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <!-- Summary section -->
-    <section id="summary" class="section">
-      <div class="container">
-        <h2>Summary</h2>
-        <p>
-          I am a researcher at the intersection of biomedical science and artificial intelligence. My work focuses on developing robust, clinically meaningful models for diagnosis, prognosis, and treatment stratification by combining multimodal medical data such as histopathology, radiology, molecular, and clinical data. I have authored over 40 peer‑reviewed publications, achieving an H‑index of 23 and accumulating more than 3,200 citations. My ultimate goal is to advance translational medical AI that improves patient care.
-        </p>
-      </div>
-    </section>
-
-    <!-- Education section -->
-    <section id="education" class="section alt">
-      <div class="container">
-        <h2>Education</h2>
-        <div class="timeline">
-          <article class="timeline-entry">
-            <h3>PhD Candidate in Computer Science &amp; Engineering <span class="date">2025</span></h3>
-            <p>School of Computer Science and Engineering, <a href="https://www.unsw.edu.au/" target="_blank">University of New South Wales</a>, Sydney, Australia.</p>
-            <p class="advisors">Advisors: Prof Erik Meijering, Prof Anant Madabhushi &amp; A/Prof Ewan Millar.</p>
-          </article>
-          <article class="timeline-entry">
-            <h3>MEng in Biomedical Engineering <span class="date">2021</span></h3>
-            <p>College of Medicine &amp; Bioinformatics Engineering, <a href="https://neu.edu.cn/" target="_blank">Northeastern University</a>, Shenyang, China.</p>
-            <p class="details">GPA 91.5 %, Highest Distinction.</p>
-            <p class="advisors">Advisors: Prof Yu‑Dong Yao &amp; Prof Chen Li.</p>
-          </article>
-          <article class="timeline-entry">
-            <h3>BSc in Electrical &amp; Electronic Engineering <span class="date">2017</span></h3>
-            <p><a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a>, Dhaka, Bangladesh.</p>
-            <p class="details">Major: Power Systems; CGPA 3.79/4.00; High Distinction.</p>
-            <p class="advisors">Advisor: Prof Md Mosaddequr Rahman.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work Experience section -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Work Experiences</h2>
-        <ul class="experience-list">
-          <li>
-            <h3>Postdoctoral Writing Fellow (Research‑only) <span class="date">Nov 2025 – Jan 2026</span></h3>
-            <p><em>School of Computer Science &amp; Engineering, UNSW, Sydney, Australia</em></p>
-            <p>Research‑only appointment supporting research writing and publication outcomes under the supervision of Prof Erik Meijering.</p>
-          </li>
-          <li>
-            <h3>Casual Academic Staff <span class="date">May 2022 – Present</span></h3>
-            <p><em>School of Computer Science &amp; Engineering, UNSW, Sydney, Australia</em></p>
-            <p>Tutoring courses including Computer Vision (COMP9517), Neural Networks &amp; Deep Learning (COMP9444) and Artificial Intelligence (COMP9814), facilitating student learning in complex topics.</p>
-          </li>
-          <li>
-            <h3>Visiting Researcher <span class="date">Oct – Nov 2025</span></h3>
-            <p><em>Schüffler Lab for AI in Pathology, Technical University of Munich (TUM), Germany</em></p>
-            <p>Delivered a seminar on multimodal pathology AI and engaged with the lab’s research on digital pathology.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Research Interests & Projects section -->
-    <section id="research" class="section alt">
-      <div class="container">
-        <h2>Research Interests</h2>
-        <p>
-          My research focuses on multimodal medical AI, where heterogeneous data sources (histopathology, radiology, molecular, and clinical data) are integrated to build models that are robust, generalizable, and clinically relevant. I am particularly interested in vision–language models, contrastive learning, zero‑shot generalization, and spatial transcriptomics for histopathology. I am also actively exploring large language models and agentic workflows for healthcare applications.
-        </p>
-        <h3>Highlighted Projects</h3>
-        <ul class="project-list">
-          <li><strong>Vision–Language Embeddings for Histopathology:</strong> Leveraging vision–language models to enable zero‑shot classification of histopathology images across diverse cancer types.</li>
-          <li><strong>Generalized Deep Learning for Histopathology:</strong> Developing contrastive learning frameworks to improve generalization and robustness of CNNs and transformers in medical image analysis.</li>
-          <li><strong>Spatial Transcriptomics &amp; Prognostics:</strong> Integrating spatial transcriptomics with histopathology images to predict gene expression and patient outcomes in breast cancer.</li>
-          <li><strong>DeepCervix Framework:</strong> A hybrid deep learning method for automated classification of cervical cells using feature‑fusion techniques.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Skills section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Programming &amp; Machine Learning</h3>
-            <ul>
-              <li>Python (PyTorch, TensorFlow, NumPy, scikit‑learn)</li>
-              <li>Deep learning: CNNs, vision transformers, contrastive &amp; multimodal learning</li>
-              <li>NLP &amp; LLMs: prompt engineering and vision–language models for healthcare</li>
-              <li>MATLAB for signal processing &amp; numerical computing</li>
-              <li>C/C++ (working knowledge)</li>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Mamunur<span>.AI</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#service">Service</a></li>
             </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Research Computing &amp; HPC</h3>
-            <ul>
-              <li>Linux‑based HPC: NCI Gadi &amp; UNSW Katana clusters</li>
-              <li>PBS/Slurm job scheduling; multi‑GPU training &amp; debugging</li>
-              <li>Environment management &amp; reproducibility: Conda/Mamba; Git/GitHub</li>
-            </ul>
-          </div>
+            <div class="nav-controls">
+                <button id="theme-btn" aria-label="Toggle Dark Mode" class="control-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </nav>
 
-    <!-- Selected Publications section -->
-    <section id="publications" class="section alt">
-      <div class="container">
-        <h2>Selected Publications</h2>
-        <p>For a full list of my publications, please visit my <a href="https://scholar.google.com/citations?user=gH9Yb9UAAAAJ" target="_blank">Google Scholar profile</a>. Below are a few representative works.</p>
-        <ol class="pub-list">
-          <li><strong>Rahaman M. M.</strong>, Millar E. K., &amp; Meijering E. (2025). <em>Leveraging Vision‑Language Embeddings for Zero‑Shot Learning in Histopathology Images</em>. <span class="journal">IEEE Journal of Biomedical and Health Informatics</span>.</li>
-          <li><strong>Rahaman M. M.</strong>; Millar E. K. A.; Meijering E. (2024). <em>Generalized Deep Learning for Histopathology Image Classification using Supervised Contrastive Learning</em>. <span class="journal">Journal of Advanced Research</span>.</li>
-          <li><strong>Rahaman M. M.</strong>; Millar E. K. A.; Meijering E. (2023). <em>Breast Cancer Histopathology Image‑Based Gene Expression Prediction using Spatial Transcriptomics Data and Deep Learning</em>. <span class="journal">Scientific Reports</span> <strong>13</strong>.</li>
-          <li><strong>Rahaman M. M.</strong>; Li C.; Yao Y.; Kulwa F.; Rahman M. A.; Wang Q.; Qi S.; Kong F.; Zhu X.; Zhao X. (2020). <em>Identification of COVID‑19 Samples from Chest X‑Ray Images using Deep Learning: A Comparison of Transfer Learning Approaches</em>. <span class="journal">Journal of X‑Ray Science and Technology</span> <strong>28</strong>, 821–839.</li>
-        </ol>
-      </div>
-    </section>
+    <main>
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <img src="assets/images/mamunur_profile.jpg" alt="Md Mamunur Rahaman" class="profile-img">
+                        </div>
+                        <div class="profile-info-mobile">
+                            <h1>Md Mamunur Rahaman</h1>
+                            <p class="role">PhD Candidate in CSE</p>
+                        </div>
+                        
+                        <div class="contact-matrix">
+                            <a href="mailto:md_mamunur.rahaman@unsw.edu.au" aria-label="Email" class="contact-item">
+                                <i class="fas fa-envelope"></i> <span>Email</span>
+                            </a>
+                            <a href="assets/Mamunur_Rahaman_CV.pdf" target="_blank" aria-label="CV" class="contact-item">
+                                <i class="ai ai-cv"></i> <span>Curriculum Vitae</span>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" aria-label="Google Scholar" class="contact-item">
+                                <i class="ai ai-google-scholar"></i> <span>Google Scholar</span>
+                            </a>
+                            <a href="https://github.com/mamunur-ai" target="_blank" aria-label="GitHub" class="contact-item">
+                                <i class="fab fa-github"></i> <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/YOUR_ID" target="_blank" aria-label="LinkedIn" class="contact-item">
+                                <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/YOUR_ID" target="_blank" aria-label="Twitter" class="contact-item">
+                                <i class="fab fa-twitter"></i> <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
 
-    <!-- Contact section -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>If you would like to collaborate or learn more about my work, please feel free to get in touch.</p>
-        <ul class="contact-list">
-          <li><strong>Email:</strong> <a href="mailto:md_mamunur.rahaman@unsw.edu.au">md_mamunur.rahaman@unsw.edu.au</a></li>
-          <li><strong>Address:</strong> 412‑06, K‑17 CSE Building, UNSW Sydney NSW 2052, Australia</li>
-          <li><strong>Profiles:</strong> <a href="https://www.linkedin.com/in/mmr95/" target="_blank">LinkedIn</a> &nbsp;|&nbsp; <a href="https://www.unsw.edu.au/staff/md-mamunur-rahaman" target="_blank">UNSW profile</a></li>
-        </ul>
-        <p>You can download my full CV in PDF format <a href="Mamunur_Rahaman_CV.pdf" download>here</a>.</p>
-      </div>
-    </section>
-  </main>
+                    <div class="bio-text">
+                        <div class="bio-header">
+                            <h1>Md Mamunur Rahaman</h1>
+                            <p class="role-subtitle">PhD Candidate • UNSW Sydney</p>
+                            <p class="location-subtitle"><i class="fas fa-map-marker-alt"></i> Sydney, Australia</p>
+                        </div>
+                        
+                        <p class="lead-paragraph">
+                            I am a researcher at the intersection of <strong>biomedical science and artificial intelligence</strong>, developing computational methods for precision healthcare. My work focuses on <strong>multimodal medical AI</strong>—integrating histopathology, radiology, molecular, and clinical data—to build robust models for diagnosis, prognosis, and treatment stratification.
+                        </p>
+                        <p>
+                            Currently, I am a PhD Candidate at the School of Computer Science and Engineering, <a href="https://www.unsw.edu.au/" class="link-highlight">UNSW Sydney</a>, advised by <a href="#" class="link-highlight">Prof. Dr. Erik Meijering</a>, <a href="#" class="link-highlight">Prof. Dr. Anant Madabhushi</a>, and <a href="#" class="link-highlight">A/Prof. Dr. Ewan Millar</a>.
+                        </p>
+                        <p>
+                            I also serve as a <strong>Visiting Fellow</strong> at Georgia Tech & Emory University (USA) and a <strong>Visiting Researcher</strong> at the Schüffler Lab, TU Munich (Germany). My research has been published in top-tier venues including <em>NeurIPS</em>, <em>IEEE JBHI</em>, and <em>Journal of Advanced Research</em>.
+                        </p>
+                        
+                        <div class="stats-row">
+                            <div class="stat-badge">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Publications</span>
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-number">3200+</span>
+                                <span class="stat-label">Citations</span>
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-number">23</span>
+                                <span class="stat-label">H-Index</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Dr Md Mamunur Rahaman. All rights reserved.</p>
-    </div>
-  </footer>
+        <section id="news" class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Highlights & News</h2>
+                    <a href="#" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="bento-grid">
+                    
+                    <div class="bento-item highlight-card neurips-card">
+                        <div class="card-badges">
+                            <span class="badge badge-gold">Oral Presentation</span>
+                            <span class="badge badge-date">2025</span>
+                        </div>
+                        <div class="bento-content">
+                            <h3>NeurIPS 2025 Acceptance</h3>
+                            <p>Our paper <strong>"PathDFM: Pathology Distillation Foundation Model for Multi-Scale WSI Analysis"</strong> was selected for an Oral Presentation (SLC-PFM Challenge Track).</p>
+                            <p class="detail-text">Recognized as a top-performing submission in the Self-supervised Learning competition.</p>
+                        </div>
+                        <div class="bento-bg-icon"><i class="fas fa-brain"></i></div>
+                    </div>
 
-  <!-- Script to handle mobile menu toggle -->
-  <script src="script.js"></script>
+                    <div class="bento-item standard-card">
+                        <div class="bento-date">Nov 2025</div>
+                        <div class="bento-content">
+                            <h3>Postdoctoral Fellow</h3>
+                            <p>Appointed as a Postdoctoral Writing Fellow at UNSW Sydney to support research outcomes under Prof. Erik Meijering.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item standard-card">
+                        <div class="bento-date">Oct 2025</div>
+                        <div class="bento-content">
+                            <h3>Invited Talk at TUM</h3>
+                            <p>Delivered a seminar on "Multimodal Computational Pathology" at the Technical University of Munich, Germany.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item standard-card">
+                        <div class="bento-date">2025</div>
+                        <div class="bento-content">
+                            <h3>Associate Editor</h3>
+                            <p>Joined the Editorial Board of <em>Frontiers in Oncology</em> (Breast Cancer section).</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item list-card">
+                        <div class="card-header">Recent Updates</div>
+                        <ul class="news-list-scroll">
+                            <li>
+                                <span class="date">2024</span>
+                                <span class="text">Selected as <strong>DAAD AInet Fellow</strong> (Postdoc-NeT-AI).</span>
+                            </li>
+                            <li>
+                                <span class="date">2024</span>
+                                <span class="text">Publication in <em>Scientific Reports</em> ranked in top 100 cancer papers of 2023.</span>
+                            </li>
+                            <li>
+                                <span class="date">2024</span>
+                                <span class="text">Presented "MM-SURVNET" at <strong>ISBI 2024</strong> in Athens, Greece.</span>
+                            </li>
+                            <li>
+                                <span class="date">2022</span>
+                                <span class="text">Awarded UNSW University International Postgraduate Award.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="publications-section">
+            <div class="container">
+                <h2 class="section-title">Selected Publications</h2>
+                <p class="subtitle">Representative works. For a full list, please visit <a href="https://scholar.google.com/citations?user=YOUR_ID" class="link-highlight">Google Scholar</a>. (* indicates equal contribution)</p>
+                
+                <div class="publication-list">
+                    
+                    <article class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/images/paper_pathdfm.jpg" alt="PathDFM Architecture" loading="lazy">
+                        </div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">PathDFM: Pathology Distillation Foundation Model for Multi-Scale WSI Analysis</h3>
+                            <div class="pub-authors">
+                                <strong>M. M. Rahaman</strong>, Y. Xu, A. Singh, P. Tung, D. Gong, Y. Song, E. K. A. Millar, E. Meijering
+                            </div>
+                            <div class="pub-venue">
+                                <em>Neural Information Processing Systems (NeurIPS)</em>, 2025.
+                                <span class="highlight-oral">Oral Presentation</span>
+                            </div>
+                            <p class="pub-abstract">
+                                We propose a distillation-based foundation model for Whole Slide Images (WSI) that captures multi-scale histological features, outperforming state-of-the-art methods in cancer subtype classification.
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-btn"><i class="far fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-code"></i> Code</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-video"></i> Video</a>
+                                <button class="pub-btn bibtex-toggle" data-target="bib-neurips25">BibTeX</button>
+                            </div>
+                            <div id="bib-neurips25" class="pub-bibtex hidden">
+<pre>@inproceedings{rahaman2025pathdfm,
+  title={PathDFM: Pathology Distillation Foundation Model for Multi-Scale WSI Analysis},
+  author={Rahaman, M.M. and others},
+  booktitle={Neural Information Processing Systems (NeurIPS)},
+  year={2025}
+}</pre>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/images/paper_jbhi.jpg" alt="Zero-Shot Learning" loading="lazy">
+                        </div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Leveraging Vision-Language Embeddings for Zero-Shot Learning in Histopathology Images</h3>
+                            <div class="pub-authors">
+                                <strong>M. M. Rahaman</strong>, E. K. Millar, E. Meijering
+                            </div>
+                            <div class="pub-venue">
+                                <em>IEEE Journal of Biomedical and Health Informatics (JBHI)</em>, 2025.
+                            </div>
+                            <p class="pub-abstract">
+                                A novel framework utilizing CLIP-based embeddings to enable zero-shot classification of rare histological patterns without annotated training data.
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-btn"><i class="far fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-code"></i> Code</a>
+                                <button class="pub-btn bibtex-toggle" data-target="bib-jbhi25">BibTeX</button>
+                            </div>
+                            <div id="bib-jbhi25" class="pub-bibtex hidden">
+<pre>@article{rahaman2025leveraging,
+  title={Leveraging Vision-Language Embeddings for Zero-Shot Learning in Histopathology Images},
+  author={Rahaman, M.M. and Millar, E.K. and Meijering, E.},
+  journal={IEEE JBHI},
+  year={2025}
+}</pre>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/images/paper_jar.jpg" alt="Contrastive Learning" loading="lazy">
+                        </div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Generalized deep learning for histopathology image classification using supervised contrastive learning</h3>
+                            <div class="pub-authors">
+                                <strong>M. M. Rahaman</strong>, E. K. A. Millar, E. Meijering
+                            </div>
+                            <div class="pub-venue">
+                                <em>Journal of Advanced Research</em>, 2024.
+                            </div>
+                            <div class="pub-stats">
+                                <span class="badge-esi"><i class="fas fa-trophy"></i> ESI Highly Cited Paper</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="#" class="pub-btn"><i class="far fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-code"></i> Code</a>
+                                <button class="pub-btn bibtex-toggle" data-target="bib-jar24">BibTeX</button>
+                            </div>
+                            <div id="bib-jar24" class="pub-bibtex hidden">
+<pre>@article{rahaman2024generalized,
+  title={Generalized deep learning for histopathology image classification using supervised contrastive learning},
+  author={Rahaman, M.M. and Millar, E.K.A. and Meijering, E.},
+  journal={Journal of Advanced Research},
+  year={2024}
+}</pre>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-alt">
+            <div class="container">
+                <div class="dual-col-layout">
+                    
+                    <div class="col-main">
+                        <h2 class="section-title">Academic Experience</h2>
+                        <div class="timeline">
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Postdoctoral Writing Fellow</h3>
+                                        <span class="timeline-date">Nov 2025 – Present</span>
+                                    </div>
+                                    <div class="timeline-inst">UNSW Sydney, Australia</div>
+                                    <p>Research-only appointment supporting publication outcomes under the supervision of Prof. Erik Meijering.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Visiting Researcher</h3>
+                                        <span class="timeline-date">Oct 2025 – Nov 2025</span>
+                                    </div>
+                                    <div class="timeline-inst">Technical University of Munich (TUM), Germany</div>
+                                    <p>Schüffler Lab (AI for Pathology). Supported by DAAD AInet Fellowship.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Visiting Fellow</h3>
+                                        <span class="timeline-date">Dec 2024 – Apr 2025</span>
+                                    </div>
+                                    <div class="timeline-inst">Georgia Tech & Emory University, USA</div>
+                                    <p>Wallace H. Coulter Dept. of Biomedical Engineering. Collaborated with Prof. Anant Madabhushi's group on computational pathology.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="service" class="col-side">
+                        <h2 class="section-title">Service & Skills</h2>
+                        
+                        <div class="service-box">
+                            <h3>Editorial Boards</h3>
+                            <ul class="clean-list">
+                                <li><strong>Associate Editor</strong>, Frontiers in Oncology</li>
+                                <li><strong>Executive Editor</strong>, AI Medicine Journal</li>
+                                <li><strong>Review Editor</strong>, Frontiers in Big Data</li>
+                            </ul>
+                        </div>
+
+                        <div class="service-box">
+                            <h3>Reviewer</h3>
+                            <p>IEEE TMI, IEEE JBHI, Scientific Reports, Expert Systems with Applications, MICCAI.</p>
+                        </div>
+
+                        <div class="service-box">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-tags">
+                                <span>PyTorch</span>
+                                <span>TensorFlow</span>
+                                <span>Multimodal AI</span>
+                                <span>HPC (Linux)</span>
+                                <span>Prompt Engineering</span>
+                                <span>Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <p>&copy; <span id="year"></span> Md Mamunur Rahaman</p>
+                    <p class="footer-note">Built with semantic HTML5 & CSS Grid. Hosted on GitHub Pages.</p>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-socials">
+                        <a href="https://github.com/mamunur-ai"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
