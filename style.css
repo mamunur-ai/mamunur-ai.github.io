@@ -1,0 +1,261 @@
+/* Global resets and typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #0f4761;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #0f4761;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container to center content */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Hero header styles */
+.hero {
+  background: linear-gradient(135deg, #153d63 0%, #0f4761 100%);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0 4rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero .subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: #cde5f3;
+}
+
+/* Navigation menu */
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #cde5f3;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
+/* Section styling */
+.section {
+  padding: 3rem 0;
+}
+
+.section.alt {
+  background-color: #f5f8fb;
+}
+
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #0f4761;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Timeline for education */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-entry h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.timeline-entry .date {
+  font-weight: 400;
+  color: #555;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.timeline-entry p {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.timeline-entry .advisors {
+  font-style: italic;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.timeline-entry .details {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Experience list */
+.experience-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.experience-list .date {
+  font-weight: 400;
+  color: #555;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.experience-list p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.skill-category {
+  flex: 1 1 300px;
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #0f4761;
+}
+
+.skill-category ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.skill-category li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* Project list within research */
+.project-list {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.project-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* Publications */
+.pub-list {
+  list-style: decimal inside;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.pub-list li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.journal {
+  font-style: italic;
+  color: #555;
+}
+
+/* Contact list */
+.contact-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #0f4761;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+  .skills-grid {
+    flex-direction: column;
+  }
+}
