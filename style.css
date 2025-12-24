@@ -1,299 +1,408 @@
-/* Global resets and typography */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Md Mamunur Rahaman - PhD Candidate in Computer Science & Engineering at UNSW. Researcher in Multimodal Medical AI, Histopathology, and Computational Pathology.">
+    <meta name="keywords" content="Mamunur Rahaman, Medical AI, Deep Learning, Histopathology, UNSW, Computer Vision, PhD, NeurIPS, MICCAI">
+    <meta name="author" content="Md Mamunur Rahaman">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mamunur-ai.github.io/">
+    <meta property="og:title" content="Md Mamunur Rahaman | AI for Healthcare">
+    <meta property="og:description" content="Researcher at the intersection of biomedical science and AI. PhD Candidate at UNSW, Visiting Fellow at Georgia Tech & TUM.">
+    <meta property="og:image" content="assets/images/profile-preview.jpg">
 
-html {
-  scroll-behavior: smooth;
-}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Md Mamunur Rahaman | AI for Healthcare">
+    <meta name="twitter:description" content="Researcher at the intersection of biomedical science and AI. PhD Candidate at UNSW.">
+    <meta name="twitter:image" content="assets/images/profile-preview.jpg">
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #ffffff;
-}
+    <title>Md Mamunur Rahaman | PhD Candidate, UNSW</title>
 
-h1, h2, h3 {
-  font-family: 'Merriweather', serif;
-  color: #0f4761;
-  margin-bottom: 0.5rem;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-p {
-  margin-bottom: 1rem;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
 
-a {
-  color: #0f4761;
-  text-decoration: none;
-}
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Mamunur<span>.AI</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#service">Service</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-btn" aria-label="Toggle Dark Mode" class="control-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-a:hover {
-  text-decoration: underline;
-}
+    <main>
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <img src="assets/images/mamunur_profile.jpg" alt="Md Mamunur Rahaman" class="profile-img">
+                        </div>
+                        <div class="profile-info-mobile">
+                            <h1>Md Mamunur Rahaman</h1>
+                            <p class="role">PhD Candidate in CSE</p>
+                        </div>
+                        
+                        <div class="contact-matrix">
+                            <a href="mailto:md_mamunur.rahaman@unsw.edu.au" aria-label="Email" class="contact-item">
+                                <i class="fas fa-envelope"></i> <span>Email</span>
+                            </a>
+                            <a href="assets/Mamunur_Rahaman_CV.pdf" target="_blank" aria-label="CV" class="contact-item">
+                                <i class="ai ai-cv"></i> <span>Curriculum Vitae</span>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" aria-label="Google Scholar" class="contact-item">
+                                <i class="ai ai-google-scholar"></i> <span>Google Scholar</span>
+                            </a>
+                            <a href="https://github.com/mamunur-ai" target="_blank" aria-label="GitHub" class="contact-item">
+                                <i class="fab fa-github"></i> <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/YOUR_ID" target="_blank" aria-label="LinkedIn" class="contact-item">
+                                <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com/YOUR_ID" target="_blank" aria-label="Twitter" class="contact-item">
+                                <i class="fab fa-twitter"></i> <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
 
-/* Container to center content */
-.container {
-  width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
+                    <div class="bio-text">
+                        <div class="bio-header">
+                            <h1>Md Mamunur Rahaman</h1>
+                            <p class="role-subtitle">PhD Candidate • UNSW Sydney</p>
+                            <p class="location-subtitle"><i class="fas fa-map-marker-alt"></i> Sydney, Australia</p>
+                        </div>
+                        
+                        <p class="lead-paragraph">
+                            I am a researcher at the intersection of <strong>biomedical science and artificial intelligence</strong>, developing computational methods for precision healthcare. My work focuses on <strong>multimodal medical AI</strong>—integrating histopathology, radiology, molecular, and clinical data—to build robust models for diagnosis, prognosis, and treatment stratification.
+                        </p>
+                        <p>
+                            Currently, I am a PhD Candidate at the School of Computer Science and Engineering, <a href="https://www.unsw.edu.au/" class="link-highlight">UNSW Sydney</a>, advised by <a href="#" class="link-highlight">Prof. Dr. Erik Meijering</a>, <a href="#" class="link-highlight">Prof. Dr. Anant Madabhushi</a>, and <a href="#" class="link-highlight">A/Prof. Dr. Ewan Millar</a>.
+                        </p>
+                        <p>
+                            I also serve as a <strong>Visiting Fellow</strong> at Georgia Tech & Emory University (USA) and a <strong>Visiting Researcher</strong> at the Schüffler Lab, TU Munich (Germany). My research has been published in top-tier venues including <em>NeurIPS</em>, <em>IEEE JBHI</em>, and <em>Journal of Advanced Research</em>.
+                        </p>
+                        
+                        <div class="stats-row">
+                            <div class="stat-badge">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Publications</span>
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-number">3200+</span>
+                                <span class="stat-label">Citations</span>
+                            </div>
+                            <div class="stat-badge">
+                                <span class="stat-number">23</span>
+                                <span class="stat-label">H-Index</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-/* Hero header styles */
-.hero {
-  background: linear-gradient(135deg, #153d63 0%, #0f4761 100%);
-  color: #fff;
-  text-align: center;
-  padding: 4rem 0 4rem;  /* Increased top padding for fixed nav overlap */
-  position: relative;
-}
+        <section id="news" class="news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Highlights & News</h2>
+                    <a href="#" class="view-all-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="bento-grid">
+                    
+                    <div class="bento-item highlight-card neurips-card">
+                        <div class="card-badges">
+                            <span class="badge badge-gold">Oral Presentation</span>
+                            <span class="badge badge-date">2025</span>
+                        </div>
+                        <div class="bento-content">
+                            <h3>NeurIPS 2025 Acceptance</h3>
+                            <p>Our paper <strong>"PathDFM: Pathology Distillation Foundation Model for Multi-Scale WSI Analysis"</strong> was selected for an Oral Presentation (SLC-PFM Challenge Track).</p>
+                            <p class="detail-text">Recognized as a top-performing submission in the Self-supervised Learning competition.</p>
+                        </div>
+                        <div class="bento-bg-icon"><i class="fas fa-brain"></i></div>
+                    </div>
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  color: #ffffff;
-}
+                    <div class="bento-item standard-card">
+                        <div class="bento-date">Nov 2025</div>
+                        <div class="bento-content">
+                            <h3>Postdoctoral Fellow</h3>
+                            <p>Appointed as a Postdoctoral Writing Fellow at UNSW Sydney to support research outcomes under Prof. Erik Meijering.</p>
+                        </div>
+                    </div>
 
-.hero .subtitle {
-  font-size: 1.1rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
-  color: #cde5f3;
-}
+                    <div class="bento-item standard-card">
+                        <div class="bento-date">Oct 2025</div>
+                        <div class="bento-content">
+                            <h3>Invited Talk at TUM</h3>
+                            <p>Delivered a seminar on "Multimodal Computational Pathology" at the Technical University of Munich, Germany.</p>
+                        </div>
+                    </div>
 
-/* Navigation menu */
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(135deg, #153d63 0%, #0f4761 100%);
-  z-index: 1000;
-  padding: 0.5rem 0;
-}
+                    <div class="bento-item standard-card">
+                        <div class="bento-date">2025</div>
+                        <div class="bento-content">
+                            <h3>Associate Editor</h3>
+                            <p>Joined the Editorial Board of <em>Frontiers in Oncology</em> (Breast Cancer section).</p>
+                        </div>
+                    </div>
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
+                    <div class="bento-item list-card">
+                        <div class="card-header">Recent Updates</div>
+                        <ul class="news-list-scroll">
+                            <li>
+                                <span class="date">2024</span>
+                                <span class="text">Selected as <strong>DAAD AInet Fellow</strong> (Postdoc-NeT-AI).</span>
+                            </li>
+                            <li>
+                                <span class="date">2024</span>
+                                <span class="text">Publication in <em>Scientific Reports</em> ranked in top 100 cancer papers of 2023.</span>
+                            </li>
+                            <li>
+                                <span class="date">2024</span>
+                                <span class="text">Presented "MM-SURVNET" at <strong>ISBI 2024</strong> in Athens, Greece.</span>
+                            </li>
+                            <li>
+                                <span class="date">2022</span>
+                                <span class="text">Awarded UNSW University International Postgraduate Award.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.nav a {
-  color: #cde5f3;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  transition: color 0.2s ease;
-}
+        <section id="publications" class="publications-section">
+            <div class="container">
+                <h2 class="section-title">Selected Publications</h2>
+                <p class="subtitle">Representative works. For a full list, please visit <a href="https://scholar.google.com/citations?user=YOUR_ID" class="link-highlight">Google Scholar</a>. (* indicates equal contribution)</p>
+                
+                <div class="publication-list">
+                    
+                    <article class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/images/paper_pathdfm.jpg" alt="PathDFM Architecture" loading="lazy">
+                        </div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">PathDFM: Pathology Distillation Foundation Model for Multi-Scale WSI Analysis</h3>
+                            <div class="pub-authors">
+                                <strong>M. M. Rahaman</strong>, Y. Xu, A. Singh, P. Tung, D. Gong, Y. Song, E. K. A. Millar, E. Meijering
+                            </div>
+                            <div class="pub-venue">
+                                <em>Neural Information Processing Systems (NeurIPS)</em>, 2025.
+                                <span class="highlight-oral">Oral Presentation</span>
+                            </div>
+                            <p class="pub-abstract">
+                                We propose a distillation-based foundation model for Whole Slide Images (WSI) that captures multi-scale histological features, outperforming state-of-the-art methods in cancer subtype classification.
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-btn"><i class="far fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-code"></i> Code</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-video"></i> Video</a>
+                                <button class="pub-btn bibtex-toggle" data-target="bib-neurips25">BibTeX</button>
+                            </div>
+                            <div id="bib-neurips25" class="pub-bibtex hidden">
+<pre>@inproceedings{rahaman2025pathdfm,
+  title={PathDFM: Pathology Distillation Foundation Model for Multi-Scale WSI Analysis},
+  author={Rahaman, M.M. and others},
+  booktitle={Neural Information Processing Systems (NeurIPS)},
+  year={2025}
+}</pre>
+                            </div>
+                        </div>
+                    </article>
 
-.nav a:hover {
-  color: #fff;
-}
+                    <article class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/images/paper_jbhi.jpg" alt="Zero-Shot Learning" loading="lazy">
+                        </div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Leveraging Vision-Language Embeddings for Zero-Shot Learning in Histopathology Images</h3>
+                            <div class="pub-authors">
+                                <strong>M. M. Rahaman</strong>, E. K. Millar, E. Meijering
+                            </div>
+                            <div class="pub-venue">
+                                <em>IEEE Journal of Biomedical and Health Informatics (JBHI)</em>, 2025.
+                            </div>
+                            <p class="pub-abstract">
+                                A novel framework utilizing CLIP-based embeddings to enable zero-shot classification of rare histological patterns without annotated training data.
+                            </p>
+                            <div class="pub-links">
+                                <a href="#" class="pub-btn"><i class="far fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-code"></i> Code</a>
+                                <button class="pub-btn bibtex-toggle" data-target="bib-jbhi25">BibTeX</button>
+                            </div>
+                            <div id="bib-jbhi25" class="pub-bibtex hidden">
+<pre>@article{rahaman2025leveraging,
+  title={Leveraging Vision-Language Embeddings for Zero-Shot Learning in Histopathology Images},
+  author={Rahaman, M.M. and Millar, E.K. and Meijering, E.},
+  journal={IEEE JBHI},
+  year={2025}
+}</pre>
+                            </div>
+                        </div>
+                    </article>
 
-/* Hide the mobile menu toggle button by default (shown in small screens via media query) */
-.menu-toggle {
-  display: none;
-}
+                    <article class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/images/paper_jar.jpg" alt="Contrastive Learning" loading="lazy">
+                        </div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Generalized deep learning for histopathology image classification using supervised contrastive learning</h3>
+                            <div class="pub-authors">
+                                <strong>M. M. Rahaman</strong>, E. K. A. Millar, E. Meijering
+                            </div>
+                            <div class="pub-venue">
+                                <em>Journal of Advanced Research</em>, 2024.
+                            </div>
+                            <div class="pub-stats">
+                                <span class="badge-esi"><i class="fas fa-trophy"></i> ESI Highly Cited Paper</span>
+                            </div>
+                            <div class="pub-links">
+                                <a href="#" class="pub-btn"><i class="far fa-file-pdf"></i> PDF</a>
+                                <a href="#" class="pub-btn"><i class="fas fa-code"></i> Code</a>
+                                <button class="pub-btn bibtex-toggle" data-target="bib-jar24">BibTeX</button>
+                            </div>
+                            <div id="bib-jar24" class="pub-bibtex hidden">
+<pre>@article{rahaman2024generalized,
+  title={Generalized deep learning for histopathology image classification using supervised contrastive learning},
+  author={Rahaman, M.M. and Millar, E.K.A. and Meijering, E.},
+  journal={Journal of Advanced Research},
+  year={2024}
+}</pre>
+                            </div>
+                        </div>
+                    </article>
 
-/* Section styling */
-.section {
-  padding: 3rem 0;
-}
+                </div>
+            </div>
+        </section>
 
-.section.alt {
-  background-color: #f5f8fb;
-}
+        <section id="experience" class="section-alt">
+            <div class="container">
+                <div class="dual-col-layout">
+                    
+                    <div class="col-main">
+                        <h2 class="section-title">Academic Experience</h2>
+                        <div class="timeline">
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Postdoctoral Writing Fellow</h3>
+                                        <span class="timeline-date">Nov 2025 – Present</span>
+                                    </div>
+                                    <div class="timeline-inst">UNSW Sydney, Australia</div>
+                                    <p>Research-only appointment supporting publication outcomes under the supervision of Prof. Erik Meijering.</p>
+                                </div>
+                            </div>
 
-.section h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid #0f4761;
-  display: inline-block;
-  padding-bottom: 0.25rem;
-}
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Visiting Researcher</h3>
+                                        <span class="timeline-date">Oct 2025 – Nov 2025</span>
+                                    </div>
+                                    <div class="timeline-inst">Technical University of Munich (TUM), Germany</div>
+                                    <p>Schüffler Lab (AI for Pathology). Supported by DAAD AInet Fellowship.</p>
+                                </div>
+                            </div>
 
-/* Ensure anchored sections are not hidden behind fixed header */
-section {
-  scroll-margin-top: 70px;
-}
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="timeline-header">
+                                        <h3>Visiting Fellow</h3>
+                                        <span class="timeline-date">Dec 2024 – Apr 2025</span>
+                                    </div>
+                                    <div class="timeline-inst">Georgia Tech & Emory University, USA</div>
+                                    <p>Wallace H. Coulter Dept. of Biomedical Engineering. Collaborated with Prof. Anant Madabhushi's group on computational pathology.</p>
+                                </div>
+                            </div>
 
-/* Timeline for education */
-.timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
+                        </div>
+                    </div>
 
-.timeline-entry h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.25rem;
-  font-weight: 700;
-}
+                    <div id="service" class="col-side">
+                        <h2 class="section-title">Service & Skills</h2>
+                        
+                        <div class="service-box">
+                            <h3>Editorial Boards</h3>
+                            <ul class="clean-list">
+                                <li><strong>Associate Editor</strong>, Frontiers in Oncology</li>
+                                <li><strong>Executive Editor</strong>, AI Medicine Journal</li>
+                                <li><strong>Review Editor</strong>, Frontiers in Big Data</li>
+                            </ul>
+                        </div>
 
-.timeline-entry .date {
-  font-weight: 400;
-  color: #555;
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-}
+                        <div class="service-box">
+                            <h3>Reviewer</h3>
+                            <p>IEEE TMI, IEEE JBHI, Scientific Reports, Expert Systems with Applications, MICCAI.</p>
+                        </div>
 
-.timeline-entry p {
-  margin-left: 0;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-}
+                        <div class="service-box">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-tags">
+                                <span>PyTorch</span>
+                                <span>TensorFlow</span>
+                                <span>Multimodal AI</span>
+                                <span>HPC (Linux)</span>
+                                <span>Prompt Engineering</span>
+                                <span>Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
 
-.timeline-entry .advisors {
-  font-style: italic;
-  color: #555;
-  font-size: 0.9rem;
-}
+                </div>
+            </div>
+        </section>
 
-.timeline-entry .details {
-  color: #555;
-  font-size: 0.9rem;
-}
+    </main>
 
-/* Experience list */
-.experience-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <p>&copy; <span id="year"></span> Md Mamunur Rahaman</p>
+                    <p class="footer-note">Built with semantic HTML5 & CSS Grid. Hosted on GitHub Pages.</p>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-socials">
+                        <a href="https://github.com/mamunur-ai"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-.experience-list h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.25rem;
-  font-weight: 700;
-}
-
-.experience-list .date {
-  font-weight: 400;
-  color: #555;
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
-}
-
-.experience-list p {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Skills grid */
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.skill-category {
-  flex: 1 1 300px;
-}
-
-.skill-category h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  color: #0f4761;
-}
-
-.skill-category ul {
-  list-style: disc inside;
-  padding-left: 1rem;
-}
-
-.skill-category li {
-  margin-bottom: 0.4rem;
-  font-size: 0.95rem;
-}
-
-/* Project list within research */
-.project-list {
-  list-style: disc inside;
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-}
-
-.project-list li {
-  margin-bottom: 0.6rem;
-  font-size: 0.95rem;
-}
-
-/* Publications list */
-.pub-list {
-  list-style: decimal inside;
-  margin-top: 0.5rem;
-  padding-left: 1rem;
-}
-
-.pub-list li {
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-}
-
-.journal {
-  font-style: italic;
-  color: #555;
-}
-
-/* Contact list */
-.contact-list {
-  list-style: none;
-  margin-top: 0.5rem;
-}
-
-.contact-list li {
-  margin-bottom: 0.6rem;
-  font-size: 0.95rem;
-}
-
-/* Footer */
-.footer {
-  background-color: #0f4761;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-}
-
-/* Responsive (mobile) adjustments */
-@media (max-width: 600px) {
-  /* Show hamburger menu button, hide nav links until opened */
-  .menu-toggle {
-    display: block;
-    position: fixed;
-    top: 0.5rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  .nav ul {
-    display: none;
-  }
-  .nav.open ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  /* Adjust hero text size on small screens for better fit */
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero .subtitle {
-    font-size: 1rem;
-  }
-  /* Stack skills columns vertically on narrow screens */
-  .skills-grid {
-    flex-direction: column;
-  }
-}
+    <script src="script.js"></script>
+</body>
+</html>
