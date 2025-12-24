@@ -48,7 +48,7 @@ a:hover {
   background: linear-gradient(135deg, #153d63 0%, #0f4761 100%);
   color: #fff;
   text-align: center;
-  padding: 3rem 0 4rem;
+  padding: 4rem 0 4rem;  /* Increased top padding for fixed nav overlap */
   position: relative;
 }
 
@@ -67,6 +67,16 @@ a:hover {
 }
 
 /* Navigation menu */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #153d63 0%, #0f4761 100%);
+  z-index: 1000;
+  padding: 0.5rem 0;
+}
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -86,6 +96,11 @@ a:hover {
   color: #fff;
 }
 
+/* Hide the mobile menu toggle button by default (shown in small screens via media query) */
+.menu-toggle {
+  display: none;
+}
+
 /* Section styling */
 .section {
   padding: 3rem 0;
@@ -101,6 +116,11 @@ a:hover {
   border-bottom: 3px solid #0f4761;
   display: inline-block;
   padding-bottom: 0.25rem;
+}
+
+/* Ensure anchored sections are not hidden behind fixed header */
+section {
+  scroll-margin-top: 70px;
 }
 
 /* Timeline for education */
@@ -206,7 +226,7 @@ a:hover {
   font-size: 0.95rem;
 }
 
-/* Publications */
+/* Publications list */
 .pub-list {
   list-style: decimal inside;
   margin-top: 0.5rem;
@@ -243,18 +263,36 @@ a:hover {
   font-size: 0.9rem;
 }
 
-/* Responsive adjustments */
+/* Responsive (mobile) adjustments */
 @media (max-width: 600px) {
+  /* Show hamburger menu button, hide nav links until opened */
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 0.5rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
   .nav ul {
+    display: none;
+  }
+  .nav.open ul {
+    display: flex;
     flex-direction: column;
     gap: 0.75rem;
   }
+  /* Adjust hero text size on small screens for better fit */
   .hero h1 {
     font-size: 2rem;
   }
   .hero .subtitle {
     font-size: 1rem;
   }
+  /* Stack skills columns vertically on narrow screens */
   .skills-grid {
     flex-direction: column;
   }
